@@ -1,0 +1,110 @@
+.builder-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 280px;
+  height: calc(100vh - 60px);
+}
+
+/* HEADER */
+.builder-header {
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.builder-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.builder-header button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding: 12px;
+}
+
+.sidebar-item {
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.sidebar-item:hover {
+  background: #f1f5f9;
+}
+
+/* CANVAS */
+.canvas {
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.form-field {
+  margin-bottom: 18px;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+/* PROPERTIES */
+.properties {
+  background: #ffffff;
+  border-left: 1px solid #e5e7eb;
+  padding: 15px;
+}
+
+.properties h4 {
+  margin-top: 0;
+}
+.submit-preview {
+  padding: 10px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.properties input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
