@@ -72,27 +72,40 @@ export default function Builder() {
 
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <h2>FormCraft</h2>
-        <div>
-          <button onClick={newForm}>New Form</button>
-          <button onClick={saveForm}>Save Form</button>
-        </div>
-      </div>
 
-      <div style={{ display: "flex" }}>
-        <Sidebar addField={addField} />
-        <FormCanvas
-          form={form}
-          setForm={setForm}
-          selectField={setSelected}
-          deleteField={deleteField}
-        />
-        <PropertiesPanel
-          field={selected}
-          updateField={updateField}
-        />
+  <>
+    <div className="top-bar">
+      <h2>FormCraft</h2>
+      <div>
+        <button className="secondary" onClick={newForm}>
+          New Form
+        </button>
+        <button onClick={saveForm}>
+          Save Form
+        </button>
       </div>
+    </div>
+
+    <div className="builder-layout">
+      <Sidebar addField={addField} />
+
+      <FormCanvas
+        form={form}
+        setForm={setForm}
+        selectField={setSelected}
+        deleteField={deleteField}
+      />
+
+      <PropertiesPanel
+        field={selected}
+        updateField={updateField}
+      />
+    </div>
+  </>
+);
+
     </>
+    
+
   );
 }

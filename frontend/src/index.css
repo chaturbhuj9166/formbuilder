@@ -1,9 +1,213 @@
+/* ===== RESET ===== */
 * {
   box-sizing: border-box;
-  font-family: Inter, system-ui, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 body {
   margin: 0;
-  background: #f4f6f8;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 12px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.top-bar h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.top-bar button {
+  margin-left: 10px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button.secondary {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.builder-layout {
+  display: flex;
+  height: calc(100vh - 120px);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 240px;
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  padding: 16px;
+}
+
+.sidebar h4 {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.sidebar-item {
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f8fafc;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.sidebar-item:hover {
+  background: #eef2ff;
+  border-color: #2563eb;
+}
+
+/* ===== FORM CANVAS ===== */
+.form-canvas {
+  flex: 1;
+  padding: 24px;
+  background: #f8fafc;
+  overflow-y: auto;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: 600;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #e2e8f0;
+  background: transparent;
+}
+
+.form-title:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ===== FORM FIELD CARD ===== */
+.form-field {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+  border: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.form-field:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.form-field input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* DELETE ICON */
+.form-field .delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: #ef4444;
+  font-size: 14px;
+}
+
+/* ===== PROPERTIES PANEL ===== */
+.properties {
+  width: 280px;
+  background: #ffffff;
+  border-left: 1px solid #e2e8f0;
+  padding: 20px;
+}
+
+.properties h4 {
+  margin-top: 0;
+}
+
+.properties label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 14px;
+  display: block;
+}
+
+.properties input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+/* ===== MY FORMS ===== */
+.my-forms {
+  padding: 24px;
+}
+
+.my-form-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.my-form-card:hover {
+  border-color: #2563eb;
 }
