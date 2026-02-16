@@ -14,5 +14,5 @@ app.use(express.json());
 app.use("/api/forms", formRoutes);
 
 app.listen(5000, () => {
-  console.log("🚀 Backend running on 5000");
+  console.log("Backend running on 5000");
 });
